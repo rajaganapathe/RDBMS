@@ -1,0 +1,4 @@
+create table store(
+name varchar2(20) constraint nam_pk primary key,
+location varchar2(30) not null,
+managerName varchar2(30) constraint man_uk unique);
