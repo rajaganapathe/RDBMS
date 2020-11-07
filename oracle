@@ -1,0 +1,7 @@
+create table Article(
+ArCode char(5) constraint ar_pk primary key,
+ArName varchar2(30) constrint ar_nk not null,
+rate number(8,2),
+quantity number(4),
+class char(1),
+constraint cls_ck check(class in("A","B","C"));
