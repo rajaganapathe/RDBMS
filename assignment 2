@@ -1,0 +1,7 @@
+CREATE TABLE shopper(
+shopperid number CONSTRAINT sho_pk PRIMARY KEY,
+shopperName varchar2(20) NOT NULL,
+gender char(6),
+mobileNo number CONSTRAINT mb_uni NOT NULL,
+address varchar2(50),
+CONSTRAINT gen_c CHECK(gender in("Male","Female"));
